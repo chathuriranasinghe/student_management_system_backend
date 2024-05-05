@@ -1,0 +1,384 @@
+---
+modelFingerprint: "4242F57CBBFB2B81BDED93F7CA19EF16"
+targetClass:
+  fullClassName: "com.SCTT.SMS.controller.UserController"
+methods:
+- method:
+    name: "getStudent"
+    sourceCodeSignature: "List<StudentDTO> getStudent()"
+    returnType: "java.util.List"
+    genericReturnType: "com.SCTT.SMS.dto.StudentDTO"
+    instructionFingerprint: "BB56B33BFD55A06E2A886FF717F89DF7"
+  paths:
+  - pathId: "path1"
+    testPathName: "getStudentTest"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "05C32D3BF8277EFE8A91AF8F97B17B70"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "A22F16F16F5AFC5AE45DD5C6409BF985"
+      valueUuid: "fieldStudentService"
+      methodExercised:
+        expression: "getAllStudents():list"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "BA243FB888A7C73D1305B2A3C3B53875"
+      valueUuid: "list"
+    uuid: "b16cf963-bd08-3c59-96d4-1049f90b3668"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.UserController"
+        parameters: []
+        propertiesMap:
+          studentService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.StudentService"
+            uuid: "fieldStudentService"
+      valueType: "com.SCTT.SMS.controller.UserController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.StudentService"
+      uuid: "fieldStudentService"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "list"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "list"
+- method:
+    name: "saveStudent"
+    sourceCodeSignature: "StudentDTO saveStudent(@RequestBody StudentDTO studentDTO)"
+    returnType: "com.SCTT.SMS.dto.StudentDTO"
+    parameters:
+    - name: "studentDTO"
+      type: "com.SCTT.SMS.dto.StudentDTO"
+    instructionFingerprint: "8515061B0A2164EA9EED204859C9CA85"
+  paths:
+  - pathId: "path1"
+    testPathName: "saveStudentTest"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "9C62393EB8D00CD8FF058AFC15BA9D20"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "studentDTO"
+      modelFingerprint: "39DD9AEAF71C7995E5A7B1A7F23CFE8D"
+      valueUuid: "studentDTO"
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "5A85921E94458CC82254B853942712D4"
+      valueUuid: "fieldStudentService"
+      methodExercised:
+        expression: "saveStudent(studentDTO:studentDTO):studentDTO2"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "826D082623ED2775CDCB42A9D9AFE318"
+      valueUuid: "studentDTO2"
+    uuid: "2684c131-d50a-3ac9-9dab-2a194c04848c"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.UserController"
+        parameters: []
+        propertiesMap:
+          studentService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.StudentService"
+            uuid: "fieldStudentService"
+      valueType: "com.SCTT.SMS.controller.UserController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.StudentService"
+      uuid: "fieldStudentService"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO2"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO2"
+- method:
+    name: "updateStudent"
+    sourceCodeSignature: "StudentDTO updateStudent(@RequestBody StudentDTO studentDTO)"
+    returnType: "com.SCTT.SMS.dto.StudentDTO"
+    parameters:
+    - name: "studentDTO"
+      type: "com.SCTT.SMS.dto.StudentDTO"
+    instructionFingerprint: "D09523D4CF13C03167D2EA31A576C0D7"
+  paths:
+  - pathId: "path1"
+    testPathName: "updateStudentTest"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "A2E16C3FDD78C7654B9A3310EB6DDF59"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "studentDTO"
+      modelFingerprint: "39DD9AEAF71C7995E5A7B1A7F23CFE8D"
+      valueUuid: "studentDTO"
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "FD714CBB17987408351FAC0177567BCA"
+      valueUuid: "fieldStudentService"
+      methodExercised:
+        expression: "updateStudent(studentDTO:studentDTO):studentDTO2"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "826D082623ED2775CDCB42A9D9AFE318"
+      valueUuid: "studentDTO2"
+    uuid: "e7caf34e-ce5b-31a9-94d0-abd5253c6d65"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.UserController"
+        parameters: []
+        propertiesMap:
+          studentService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.StudentService"
+            uuid: "fieldStudentService"
+      valueType: "com.SCTT.SMS.controller.UserController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.StudentService"
+      uuid: "fieldStudentService"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO2"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO2"
+- method:
+    name: "deleteStudent"
+    sourceCodeSignature: "boolean deleteStudent(@RequestBody StudentDTO studentDTO)"
+    returnType: "boolean"
+    parameters:
+    - name: "studentDTO"
+      type: "com.SCTT.SMS.dto.StudentDTO"
+    instructionFingerprint: "F8849E5C92855ED285D3BE4D20AFC76F"
+  paths:
+  - pathId: "path1"
+    testPathName: "deleteStudentWhenStudentServiceDeleteStudentStudentDTO"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "F897B7FC0FEC7D20DEC73A7EEE03BC47"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "studentDTO"
+      modelFingerprint: "39DD9AEAF71C7995E5A7B1A7F23CFE8D"
+      valueUuid: "studentDTO"
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "F2D33CE4EF1D094DAD069CF12B4268D3"
+      valueUuid: "fieldStudentService"
+      methodExercised:
+        expression: "deleteStudent(studentDTO:studentDTO):boolean1"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8383DF6F1D02800B0E90FD4143032B37"
+      valueUuid: "boolean1"
+    uuid: "3500c7a6-9ab5-34eb-94af-eba17043fbe8"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.UserController"
+        parameters: []
+        propertiesMap:
+          studentService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.StudentService"
+            uuid: "fieldStudentService"
+      valueType: "com.SCTT.SMS.controller.UserController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.StudentService"
+      uuid: "fieldStudentService"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+      fixed: true
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+      fixed: true
+    branches:
+    - lineNumber: 34
+      expression: "studentService.deleteStudent(studentDTO)"
+      range: "(34,16)-(34,55)"
+      evaluatedAs: true
+  - pathId: "path2"
+    testPathName: "deleteStudentWhenStudentServiceNotDeleteStudentStudentDTO"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "12F0579720D46EE2473ED94D834165BD"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "studentDTO"
+      modelFingerprint: "39DD9AEAF71C7995E5A7B1A7F23CFE8D"
+      valueUuid: "studentDTO"
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "BB0446AA9296C4B134155667517EA469"
+      valueUuid: "fieldStudentService"
+      methodExercised:
+        expression: "deleteStudent(studentDTO:studentDTO):boolean1"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5633A2B0C967879105766C98D64A3959"
+      valueUuid: "boolean1"
+    uuid: "05e36f13-4f07-38a2-97e2-0624c9c8c0f9"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.UserController"
+        parameters: []
+        propertiesMap:
+          studentService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.StudentService"
+            uuid: "fieldStudentService"
+      valueType: "com.SCTT.SMS.controller.UserController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.StudentService"
+      uuid: "fieldStudentService"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+      fixed: true
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+      fixed: true
+    branches:
+    - lineNumber: 34
+      expression: "studentService.deleteStudent(studentDTO)"
+      range: "(34,16)-(34,55)"
+      evaluatedAs: false
+- method:
+    name: "getStudentByIndexNo"
+    sourceCodeSignature: "StudentDTO getStudentByIndexNo(@PathVariable String studentIndex)"
+    returnType: "com.SCTT.SMS.dto.StudentDTO"
+    parameters:
+    - name: "studentIndex"
+      type: "java.lang.String"
+    instructionFingerprint: "6AD315AADE848C247FFB6F6FCFEF5A45"
+  paths:
+  - pathId: "path1"
+    testPathName: "getStudentByIndexNoTest"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "498EB6560763AD42A667B6A3504495CC"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "studentIndex"
+      modelFingerprint: "4CE4708EF0287BE6BA2FF0D5BFF5E875"
+      valueUuid: "studentIndex"
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "43AD44B65AE45B674D452336A58E9325"
+      valueUuid: "fieldStudentService"
+      methodExercised:
+        expression: "getStudentByIndexNo(studentIndex:studentIndex):studentDTO"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "826D082623ED2775CDCB42A9D9AFE318"
+      valueUuid: "studentDTO"
+    uuid: "971a35b9-51d7-3ea1-aed2-fe36ba4c77c2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.UserController"
+        parameters: []
+        propertiesMap:
+          studentService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.StudentService"
+            uuid: "fieldStudentService"
+      valueType: "com.SCTT.SMS.controller.UserController"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "studentIndex1"
+      valueType: "java.lang.String"
+      uuid: "studentIndex"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.StudentService"
+      uuid: "fieldStudentService"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "studentIndex1"
+      valueType: "java.lang.String"
+      uuid: "studentIndex"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.StudentDTO"
+      uuid: "studentDTO"

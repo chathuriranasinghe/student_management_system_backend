@@ -1,0 +1,384 @@
+---
+modelFingerprint: "FC1CBABE0440349708E86BD2C3366972"
+targetClass:
+  fullClassName: "com.SCTT.SMS.controller.CourseController"
+methods:
+- method:
+    name: "getCourse"
+    sourceCodeSignature: "List<CourseDTO> getCourse()"
+    returnType: "java.util.List"
+    genericReturnType: "com.SCTT.SMS.dto.CourseDTO"
+    instructionFingerprint: "4B61DAC70FC40C719711398E94C06710"
+  paths:
+  - pathId: "path1"
+    testPathName: "getCourseTest"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "4E89CB7EB98FC6DEE8AF149D555F5C4A"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "FIELD"
+      name: "courseService"
+      modelFingerprint: "8DF96452F851FC72257BAA0847605212"
+      valueUuid: "fieldCourseService"
+      methodExercised:
+        expression: "getAllCourses():list"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "06B8949C72F639DDBB077ABF3DE92F39"
+      valueUuid: "list"
+    uuid: "fcdc8372-fbc7-30d5-9107-6d8aec028a2e"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.CourseController"
+        parameters: []
+        propertiesMap:
+          courseService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.CourseService"
+            uuid: "fieldCourseService"
+      valueType: "com.SCTT.SMS.controller.CourseController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.CourseService"
+      uuid: "fieldCourseService"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "list"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "list"
+- method:
+    name: "saveCourse"
+    sourceCodeSignature: "CourseDTO saveCourse(@RequestBody CourseDTO courseDTO)"
+    returnType: "com.SCTT.SMS.dto.CourseDTO"
+    parameters:
+    - name: "courseDTO"
+      type: "com.SCTT.SMS.dto.CourseDTO"
+    instructionFingerprint: "1A7DC3579FB8EA9DE07DF4A16BBC9C7B"
+  paths:
+  - pathId: "path1"
+    testPathName: "saveCourseTest"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "68F65413E4842BA893557A6564553BA8"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "courseDTO"
+      modelFingerprint: "73F34C407F7F602D04E74C20A84CC5E8"
+      valueUuid: "courseDTO"
+    - type: "FIELD"
+      name: "courseService"
+      modelFingerprint: "5EC6FF51E6061D78BED0A33E29CCE147"
+      valueUuid: "fieldCourseService"
+      methodExercised:
+        expression: "saveCourse(courseDTO:courseDTO):courseDTO2"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "849754A6E50C2FD24662526008FA67B7"
+      valueUuid: "courseDTO2"
+    uuid: "79460233-83cf-3d23-b1a5-33a0e06ec78c"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.CourseController"
+        parameters: []
+        propertiesMap:
+          courseService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.CourseService"
+            uuid: "fieldCourseService"
+      valueType: "com.SCTT.SMS.controller.CourseController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.CourseService"
+      uuid: "fieldCourseService"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO2"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO2"
+- method:
+    name: "updateCourse"
+    sourceCodeSignature: "CourseDTO updateCourse(@RequestBody CourseDTO courseDTO)"
+    returnType: "com.SCTT.SMS.dto.CourseDTO"
+    parameters:
+    - name: "courseDTO"
+      type: "com.SCTT.SMS.dto.CourseDTO"
+    instructionFingerprint: "B7526EBE6BDA69EE5CE0B2E0368F50D3"
+  paths:
+  - pathId: "path1"
+    testPathName: "updateCourseTest"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "D572FA754031560C0D730BD2417ECE5A"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "courseDTO"
+      modelFingerprint: "73F34C407F7F602D04E74C20A84CC5E8"
+      valueUuid: "courseDTO"
+    - type: "FIELD"
+      name: "courseService"
+      modelFingerprint: "5FED726F7693A2AC14C97DAD783903FC"
+      valueUuid: "fieldCourseService"
+      methodExercised:
+        expression: "updateCourse(courseDTO:courseDTO):courseDTO2"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "849754A6E50C2FD24662526008FA67B7"
+      valueUuid: "courseDTO2"
+    uuid: "330c65d9-c121-333c-9889-48d4a6e83aee"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.CourseController"
+        parameters: []
+        propertiesMap:
+          courseService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.CourseService"
+            uuid: "fieldCourseService"
+      valueType: "com.SCTT.SMS.controller.CourseController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.CourseService"
+      uuid: "fieldCourseService"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO2"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO2"
+- method:
+    name: "deleteCourse"
+    sourceCodeSignature: "boolean deleteCourse(@RequestBody CourseDTO courseDTO)"
+    returnType: "boolean"
+    parameters:
+    - name: "courseDTO"
+      type: "com.SCTT.SMS.dto.CourseDTO"
+    instructionFingerprint: "C3B3A14602029C6F80EE32914111DEAD"
+  paths:
+  - pathId: "path1"
+    testPathName: "deleteCourseWhenCourseServiceDeleteCourseCourseDTO"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "161823FFAF5179CBE24BCF5B0D5D47B2"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "courseDTO"
+      modelFingerprint: "73F34C407F7F602D04E74C20A84CC5E8"
+      valueUuid: "courseDTO"
+    - type: "FIELD"
+      name: "courseService"
+      modelFingerprint: "534DB957E1F359CDB7057582DFB40FB0"
+      valueUuid: "fieldCourseService"
+      methodExercised:
+        expression: "deleteCourse(courseDTO:courseDTO):boolean1"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8383DF6F1D02800B0E90FD4143032B37"
+      valueUuid: "boolean1"
+    uuid: "8d07e2d5-d3f5-3f8b-95b6-90c05f6d58bd"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.CourseController"
+        parameters: []
+        propertiesMap:
+          courseService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.CourseService"
+            uuid: "fieldCourseService"
+      valueType: "com.SCTT.SMS.controller.CourseController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.CourseService"
+      uuid: "fieldCourseService"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+      fixed: true
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+      fixed: true
+    branches:
+    - lineNumber: 35
+      expression: "courseService.deleteCourse(courseDTO)"
+      range: "(35,16)-(35,52)"
+      evaluatedAs: true
+  - pathId: "path2"
+    testPathName: "deleteCourseWhenCourseServiceNotDeleteCourseCourseDTO"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "5F181CE353E0B479570B1D668B545660"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "courseDTO"
+      modelFingerprint: "73F34C407F7F602D04E74C20A84CC5E8"
+      valueUuid: "courseDTO"
+    - type: "FIELD"
+      name: "courseService"
+      modelFingerprint: "A8D7B6841AF251BDE8AFC8EEB2683282"
+      valueUuid: "fieldCourseService"
+      methodExercised:
+        expression: "deleteCourse(courseDTO:courseDTO):boolean1"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5633A2B0C967879105766C98D64A3959"
+      valueUuid: "boolean1"
+    uuid: "7678bbcf-6a6f-3efb-a974-e1fdef3bfa56"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.CourseController"
+        parameters: []
+        propertiesMap:
+          courseService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.CourseService"
+            uuid: "fieldCourseService"
+      valueType: "com.SCTT.SMS.controller.CourseController"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.CourseService"
+      uuid: "fieldCourseService"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+      fixed: true
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+      fixed: true
+    branches:
+    - lineNumber: 35
+      expression: "courseService.deleteCourse(courseDTO)"
+      range: "(35,16)-(35,52)"
+      evaluatedAs: false
+- method:
+    name: "getCourseByIndexNo"
+    sourceCodeSignature: "CourseDTO getCourseByIndexNo(@PathVariable String studentIndex)"
+    returnType: "com.SCTT.SMS.dto.CourseDTO"
+    parameters:
+    - name: "studentIndex"
+      type: "java.lang.String"
+    instructionFingerprint: "8076BE93DDD72C4EFF40BAB981A6F26F"
+  paths:
+  - pathId: "path1"
+    testPathName: "getCourseByIndexNoTest"
+    constructorSignature: "<init>() : void"
+    modelFingerprint: "F46312763B7241FDBBE97B269C80D002"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "studentIndex"
+      modelFingerprint: "4CE4708EF0287BE6BA2FF0D5BFF5E875"
+      valueUuid: "studentIndex"
+    - type: "FIELD"
+      name: "courseService"
+      modelFingerprint: "5D0501ED5B2C4D45F02753FFB5690B5C"
+      valueUuid: "fieldCourseService"
+      methodExercised:
+        expression: "getCourseByIndexNo(studentIndex:studentIndex):courseDTO"
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "849754A6E50C2FD24662526008FA67B7"
+      valueUuid: "courseDTO"
+    uuid: "79b928f4-e74e-3885-b55f-70d56ab50cea"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.SCTT.SMS.controller.CourseController"
+        parameters: []
+        propertiesMap:
+          courseService:
+            sapientType: "MOCK"
+            valueType: "com.SCTT.SMS.service.CourseService"
+            uuid: "fieldCourseService"
+      valueType: "com.SCTT.SMS.controller.CourseController"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "studentIndex1"
+      valueType: "java.lang.String"
+      uuid: "studentIndex"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.service.CourseService"
+      uuid: "fieldCourseService"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "studentIndex1"
+      valueType: "java.lang.String"
+      uuid: "studentIndex"
+    - sapientType: "MOCK"
+      valueType: "com.SCTT.SMS.dto.CourseDTO"
+      uuid: "courseDTO"
